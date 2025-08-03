@@ -24,4 +24,4 @@ A cinematic, hacker-themed cyber threat simulator built for front-end magic.
 - Leaflet.js for maps
 - Voice + Typing simulated
 
-![Preview](preview.png)
+![Preview](drdoom.png)
