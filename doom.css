@@ -1,40 +1,41 @@
-
 body {
   margin: 0;
-  background-color: #000f00;
-  color: #00ff66;
+  background-color: #010d01;
+  color: #00ff88;
   font-family: 'Courier New', Courier, monospace;
-}
-.intro {
-  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.doom-avatar {
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(#00ff66, transparent);
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
-#doom-text {
-  font-size: 2em;
-  margin-top: 1em;
+  flex-direction: column;
+  height: 100vh;
   text-align: center;
 }
-@keyframes pulse {
-  0% { transform: scale(1); opacity: 0.8; }
-  50% { transform: scale(1.1); opacity: 1; }
-  100% { transform: scale(1); opacity: 0.8; }
+
+.container {
+  position: relative;
+  z-index: 1;
 }
-#map {
-  height: 60vh;
-  width: 100%;
+
+.glow-ring {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #00ff88;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
 }
-.log {
-  padding: 1em;
-  font-size: 1em;
-  background-color: #001a00;
+
+.doom-img {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+}
+
+.text {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  white-space: pre-line;
 }
