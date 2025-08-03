@@ -1,0 +1,40 @@
+
+body {
+  margin: 0;
+  background-color: #000f00;
+  color: #00ff66;
+  font-family: 'Courier New', Courier, monospace;
+}
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.doom-avatar {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(#00ff66, transparent);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+#doom-text {
+  font-size: 2em;
+  margin-top: 1em;
+  text-align: center;
+}
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+#map {
+  height: 60vh;
+  width: 100%;
+}
+.log {
+  padding: 1em;
+  font-size: 1em;
+  background-color: #001a00;
+}
